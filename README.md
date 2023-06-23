@@ -1,1 +1,1 @@
-# pathfinding-visualisation
+Please refer to readme files in maze-js and maze-py respectively

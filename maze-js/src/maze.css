@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+#grid {
+    margin: 20px auto auto;
+    border: 1px solid black;
+    border-radius: 8px;
+    padding: 10px;
+    line-height: 0.25;
+
+    width: 80%;
+
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+#control-panel {
+    padding: 10px 0px;
+    text-align: center;
+    width: 50%;
+    height: 115px;
+    margin: auto auto 10px;
+}
+
+#grid .square {
+    width: 25px;
+    height: 25px;
+    border: 1px solid lightblue;
+    display: inline-block;
+}
+
+#grid .square:hover {
+    transform: scale(1.1);
+    transform-origin: center;
+}
+
+.square.start {
+    background-color: green;
+
+    -webkit-transition: background-color 1000ms linear;
+    -ms-transition: background-color 1000ms linear;
+    transition: background-color 1000ms linear;
+}
+
+.square.empty {
+    background-color: white;
+
+    -webkit-transition: background-color 1000ms linear;
+    -ms-transition: background-color 1000ms linear;
+    transition: background-color 1000ms linear;
+}
+
+.square.visited {
+    background-color: orange;
+
+    -webkit-transition: background-color 1000ms linear;
+    -ms-transition: background-color 1000ms linear;
+    transition: background-color 1000ms linear;
+}
+
+.square.wall {
+    background-color: black;
+
+    -webkit-transition: background-color 1000ms linear;
+    -ms-transition: background-color 1000ms linear;
+    transition: background-color 1000ms linear;
+}
+
+.square.path {
+    background-color: purple;
+
+    -webkit-transition: background-color 1000ms linear;
+    -ms-transition: background-color 1000ms linear;
+    transition: background-color 1000ms linear;
+}
+
+.square.end {
+    background-color: red;
+
+    -webkit-transition: background-color 1000ms linear;
+    -ms-transition: background-color 1000ms linear;
+    transition: background-color 1000ms linear;
+}
